@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
-
+import Logo from "../content/logo-l-apero-text.jpg"
 
 
 const HomePage = () => (
@@ -47,21 +47,21 @@ const HomePage = () => (
 			   <section className='grid-landing container'>
 				   <div className='hero'>
 				  		<div className='hero-item'>
-				        	<h1 >{contentfulHomepage.title}</h1>
+				        	<img src={Logo} alt="L'apero" width="auto" />
 				      	</div> 
 					    <div className='hero-item'>
-					      	<div className='text' dangerouslySetInnerHTML={{__html:contentfulHomepage.subtitle.childMarkdownRemark.html}}></div>
+					      	<div className='text'    dangerouslySetInnerHTML={{__html:contentfulHomepage.subtitle.childMarkdownRemark.html}}></div>
 					    
 					    </div>  
 					</div>
-					<p>Ouverture le 1er décembre 2018</p>
+					
 				</section>
 
 				
 
 				<section className="grid-presentation">
 				
-					<img alt={contentfulHomepage.backgroundImage.description} srcSet={contentfulHomepage.backgroundImage.fluid.srcSet} />
+					
 
 
 					  <div className="img1"></div>
@@ -77,8 +77,9 @@ const HomePage = () => (
 					  <div className="cta-wrapper">
 					    
 					    <div className="cta">
-					      <h1>L'Apéro</h1>
+					      <h1>L 'Apéro</h1>
 					      <p>L'épicerie propose un large choix de fromages, charcuterie, vins, pains, croissants et autres produits du terroir pour les amateurs des bons repas !</p>
+					      <p>Ouverture le 1er décembre 2018</p>
 					      <a className="button" href="index">Découvrir la boutique →</a>
 					    </div>
 					    

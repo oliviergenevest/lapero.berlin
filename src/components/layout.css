@@ -3,7 +3,10 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,700');
 @import url('https://fonts.googleapis.com/css?family=Slabo+13px');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');*/
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Alegreya');
+
+
+
 
 body,html, #___gatsby, body>div>div{height:100%;}
 
@@ -18,7 +21,7 @@ section {
   height:100vh;
 /*font-family: 'Amatic SC', cursive;
  font-family: 'Oswald', serif;
- font-family: 'Open+Sans', sans-serif;*/
+ font-family: 'Alegreya', sans-serif;*/
   
 }
 
@@ -29,6 +32,7 @@ section {
 
 .grid-landing {
  /* font-size:2rem;*/
+ background-color:#fff;
  display: -ms-grid;
    display: grid;
    -ms-grid-rows:1fr 50px;
@@ -41,13 +45,14 @@ section {
 }
 
 .hero{
-  font-family: 'Amatic SC', cursive;
+ /* font-family: 'Amatic SC', cursive;*/
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
 .hero h1 {color: #86f3a3;  /*font-size:6rem;*/}
+.hero h1 {color: #303030;  /*font-size:6rem;*/}
 
 .footer
 {white-space:pre;color: #fff; 
@@ -104,7 +109,7 @@ section {
 
 
 blockquote {
-  font: 1.1em/2 'Playfair Display', serif;
+ /* font: 1.1em/2 'Playfair Display', serif;*/
   font-style: italic;
   margin: 0 0 2em 0;
 }
@@ -240,7 +245,7 @@ blockquote {
     height: 1em;
     width: 1em;
     /* https://elements.envato.com/retro-badges-7B35YA */
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/badge.svg) no-repeat center center;
+    background: url(../content/logo-l-apero-rouge.jpg) no-repeat center center;
     background-size: 80%;
     position: absolute;
     left: -120px;

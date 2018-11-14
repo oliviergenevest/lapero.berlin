@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-starter-hello-world",
-  "description": "Gatsby hello world starter",
+  "name": "gatsby-starter-contentful-lapero",
+  "description": "Gatsby starter contentful l'apero",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
@@ -16,8 +16,8 @@
     "gatsby-remark-external-links": "0.0.4",
     "gatsby-source-contentful": "^2.0.13",
     "gatsby-transformer-remark": "^2.1.12",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
     "react-typography": "^0.16.13",
     "typography": "^0.16.17"
   }
