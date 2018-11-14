@@ -4,16 +4,16 @@ const typography = new Typography({
  title: 'L\'apero',
   baseFontSize: "20px" ,
   baseLineHeight: 1.6,
-  headerFontFamily: [config.headerFontFamily, 'cursive'],
-  bodyFontFamily: ['Playfair Display','serif'],
-  scaleRatio: 6,
+  headerFontFamily: ['Alegreya', 'serif'],
+  bodyFontFamily: ['Karla','sans-serif'],
+  scaleRatio: 4,
   googleFonts: [
     {
-      name: config.headerFontFamily,
+      name: 'Alegreya',
       styles: ['400'],
     },
     {
-     name: config.bodyFontFamily,
+     name: 'Karla',
      styles: ['400'],
       
     }
