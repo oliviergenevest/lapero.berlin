@@ -50,8 +50,7 @@ const HomePage = () => (
 				        	<img src={Logo} alt="L'apero" width="auto" />
 				      	</div> 
 					    <div className='hero-item'>
-					      	<div className='text'    dangerouslySetInnerHTML={{__html:contentfulHomepage.subtitle.childMarkdownRemark.html}}></div>
-					    
+					      	<h2>{contentfulHomepage.subtitle.subtitle}</h2> 
 					    </div>  
 					</div>
 					
@@ -100,15 +99,17 @@ const HomePage = () => (
 					
 					</div>
 					<div className="item">
-						<p></p>
-						<p>Longitude: {contentfulHomepage.location.lon} </p>
-						<p>Latitude: {contentfulHomepage.location.lat} </p>
+						<p>L'Apéro <br/>adresse adresse<br/> - 12054 BERLIN
+						</p>
+						
 							<p>TEL : +444 550 45 4545</p>
 							<p>MAIL : rdv@lapero.berlin</p>
 					</div>
 				</div>
 				<div className="content map">
 					<p>MAP</p>
+					<p>Longitude: {contentfulHomepage.location.lon} </p>
+						<p>Latitude: {contentfulHomepage.location.lat} </p>
 				</div>
 				</section>
 
