@@ -16,7 +16,11 @@ background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-2
 background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 color: #e0e0e0; 
 }
-
+.leaflet-container {
+  
+  height:100%;
+  width: 100%;
+}
 section {
   height:100vh;
 /*font-family: 'Amatic SC', cursive;
@@ -96,14 +100,14 @@ section {
 .grid-contact .map{
     align-items: center;
     justify-content: center;
-  background-color: darkgray;
+ 
 }
 
 
 
 
 .grid-presentation {
-
+color: #e0e0e0;
   height:auto;
 }
 
@@ -245,8 +249,8 @@ blockquote {
     height: 1em;
     width: 1em;
     /* https://elements.envato.com/retro-badges-7B35YA */
-    background: url(../content/logo-l-apero-rouge.jpg) no-repeat center center;
-    background-size: 80%;
+   /* background: url(../content/logo-l-apero-rouge.jpg) no-repeat center center;
+    background-size: 80%;*/
     position: absolute;
     left: -120px;
     top: 0;

@@ -11,7 +11,7 @@ module.exports = {
   // og: Meta Tags
   ogSiteName: 'L\'apéro - Epicerie fine - Berlin', // Facebook Site Name
   ogLanguage: 'fr_FR',
-  googleAnalyticsID: 'UA-2773228-2',
+  googleAnalyticsID: '',
   
   // You can translate these three words into your language if you want.
   // They'll be shown on the project page header

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
+import Navigation from './Navigation/Navigation.jsx'
 import { StaticQuery, graphql } from 'gatsby'
 //import PageTransition from 'gatsby-plugin-page-transitions';
 
@@ -29,7 +29,7 @@ const Layout = ({ children }) => (
 
     `}
     render={data => (
-      <>
+      <> <Navigation/>
           <main>
 
           {children}

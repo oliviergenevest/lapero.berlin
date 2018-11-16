@@ -11,13 +11,21 @@
   "dependencies": {
     "dotenv": "^6.1.0",
     "gatsby": "^2.0.33",
+    "gatsby-plugin-react-leaflet": "^1.0.7",
     "gatsby-plugin-sass": "^2.0.4",
     "gatsby-plugin-typography": "^2.2.1",
     "gatsby-remark-external-links": "0.0.4",
-    "gatsby-source-contentful": "^2.0.13",
+    "gatsby-source-contentful": "^2.0.14",
     "gatsby-transformer-remark": "^2.1.12",
+    "leaflet": "^1.3.4",
+    "node-sass": "^4.10.0",
     "react": "^16.6.0",
+    "react-burger-menu": "^2.5.4",
     "react-dom": "^16.6.0",
+    "react-headroom": "^2.2.4",
+    "react-icons": "^3.2.2",
+    "react-leaflet": "^2.1.2",
+    "react-reveal": "^1.2.2",
     "react-typography": "^0.16.13",
     "typography": "^0.16.17"
   }
