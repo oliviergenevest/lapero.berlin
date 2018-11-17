@@ -3,11 +3,11 @@ import Link from 'gatsby-link';
 import Headroom from 'react-headroom';
 import { slide as Menu } from 'react-burger-menu';
 import { Fade } from 'react-reveal';
-import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/lib/fa';
+import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
 import config from '../../../config/SiteConfig';
 import styles from './Navigation.module.scss';
 import './Headroom.scss';
-import Logo from "../../content/logo-l-apero-rouge.jpg"
+import Logo from "../../content/logoRouge.jpg"
 export default class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -93,3 +93,4 @@ export default class Navigation extends Component {
     );
   }
 }
+

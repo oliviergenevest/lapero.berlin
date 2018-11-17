@@ -16,7 +16,7 @@ constructor() {
    
     if (typeof window !== 'undefined') {
     	 const { options } = this.props
-    console.log(this.props)
+   /* console.log(this.props)*/
     const position = [this.props.latitude, this.props.longitude]; 
       return (
         <Map {...options} center={position} zoom={13} >

@@ -2,6 +2,10 @@
   "name": "gatsby-starter-contentful-lapero",
   "description": "Gatsby starter contentful l'apero",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/oliviergenevest/lapero.berlin",
+    "type": "git"
+  },
   "scripts": {
     "develop": "gatsby develop",
     "start": "npm run develop",
@@ -10,7 +14,8 @@
   },
   "dependencies": {
     "dotenv": "^6.1.0",
-    "gatsby": "^2.0.33",
+    "gatsby": "^2.0.50",
+    "gatsby-plugin-google-analytics": "^2.0.7",
     "gatsby-plugin-react-leaflet": "^1.0.7",
     "gatsby-plugin-sass": "^2.0.4",
     "gatsby-plugin-typography": "^2.2.1",

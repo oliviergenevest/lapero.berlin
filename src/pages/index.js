@@ -1,8 +1,9 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
-import Logo from "../content/logo-l-apero-text.jpg"
-import MapLeaflet from "../components/map-leaflet"
+import Logo from "../content/logoText.jpg"
+import { FaPhone, FaEnvelope } from 'react-icons/fa';
+/*import MapLeaflet from "../components/map-leaflet"*/
 import { Fade } from 'react-reveal';
 const HomePage = () => (
   <StaticQuery
@@ -114,7 +115,7 @@ const HomePage = () => (
 					</div>
 					<div className="item">
 					<h2>Contact</h2>
-					<p><b>Tel</b> : +444 550 45 4545<br/><b>Email</b> : rdv@lapero.berlin</p>
+					<p><b><FaPhone/> Tel</b> : +444 550 45 4545<br/><b><FaEnvelope/> Email</b> : rdv@lapero.berlin</p>
 						<p>L'Apéro <br/>adresse adresse<br/> - 12054 BERLIN
 						</p>
 						
@@ -122,8 +123,8 @@ const HomePage = () => (
 					</div>
 				</div>
 				<div className="content map">
-					<MapLeaflet latitude={contentfulHomepage.location.lat} longitude={contentfulHomepage.location.lon}/>
 				
+				MAP
 				</div>
 				</Fade>
 				</section>
@@ -133,5 +134,10 @@ const HomePage = () => (
     )}
   />
 );
+
+    /* 	<MapLeaflet latitude={contentfulHomepage.location.lat} longitude={contentfulHomepage.location.lon}/>*/
+
+				 
+				
 
 export default HomePage;

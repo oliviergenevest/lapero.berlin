@@ -10,17 +10,11 @@ const { spaceId, accessToken } = process.env;
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
-    title: 'LAPERO BERLIN',
+    title: 'L APERO BERLIN',
   },
-  plugins: [
-    {
-      resolve: "gatsby-source-contentful",
-      options: {
-        spaceId,
-        accessToken
-      }
-    },
-
+ 
+ plugins: [
+   
      {
       resolve: 'gatsby-remark-external-links',
       options: {
@@ -36,10 +30,26 @@ module.exports = {
        /*omitGoogleFont : `true`,*/
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+      // replace "UA-XXXXXXXXX-X" with your own Tracking ID
+        trackingId: "UA-XXXXXXXXX-X",
+      },
+    },
     
       `gatsby-transformer-remark`,
-      `gatsby-plugin-sass`,
-       `gatsby-plugin-react-leaflet`,
+     `gatsby-plugin-sass`,
+  
+  
+   {
+      resolve: "gatsby-source-contentful",
+      options: {
+        spaceId,
+        accessToken
+      }
+    },
+    /*  `gatsby-plugin-react-leaflet-v2`,*/
     
   ],
 }

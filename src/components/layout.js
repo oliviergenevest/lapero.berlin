@@ -8,12 +8,13 @@ import { StaticQuery, graphql } from 'gatsby'
 import Footer from './footer'
 /*import ContactBar from './contactBar'*/
 import config from '../../config/SiteConfig';
+import './layout.scss'
 
 
-import './layout.css'
-/*import 'typeface-montserrat';
-import 'typeface-montserrat-alternates';*/
-console.log(config)
+
+/* import 'typeface-montserrat';
+import 'typeface-montserrat-alternates';
+console.log(config) */
 const Layout = ({ children }) => (
 
   <StaticQuery
@@ -29,7 +30,8 @@ const Layout = ({ children }) => (
 
     `}
     render={data => (
-      <> <Navigation/>
+      <> 
+      <Navigation/>
           <main>
 
           {children}
