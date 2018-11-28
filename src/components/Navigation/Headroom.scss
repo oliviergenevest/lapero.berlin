@@ -12,17 +12,19 @@ $transition-headroom: all 0.35s ease-in-out;
 }
 
 .headroom {
-  padding: 1rem 2rem;
+  background-color: #fff;
+  padding: 0.5rem 2rem;
   width: 100%;
 display: flex;
   a {
-    /*  font-size: 1.3rem;*/
+    text-transform:uppercase;
+      font-size: 1.25rem;
       color:$brand-third;
       text-decoration:none;
   }
 
   a.active {
-    color: $brand-primary;
+    color: $brand-third;
 
   }
 
@@ -48,9 +50,52 @@ display: flex;
 }
 
 .headroom--pinned {
-  background-color: $background-color;
+  background-color: #fff;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
   position: fixed;
   transform: translateY(0%);
   transition: $transition-headroom;
+}
+
+
+
+/* Effect 4: bottom border enlarge */
+
+.headroom nav a::after {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: $brand-primary;
+  content: '';
+  opacity: 0;
+ 
+  transition: height 0.3s, opacity 0.3s, transform 0.3s;
+ 
+  transform: translateY(-10px);
+}
+
+.headroom nav a:hover::after,
+.headroom nav a:focus::after {
+  height: 5px;
+  opacity: 1;
+  transform: translateY(0px);
+}
+.headroom nav a {
+  position: relative;
+  display: inline-block;
+  outline: none;
+  color: $brand-secondary;
+  text-decoration: none;
+  text-transform: uppercase;
+
+
+
+  font-size: 1.35em;
+}
+
+.headroom nav a:hover,
+.headroom nav a:focus {
+  outline: none;
 }

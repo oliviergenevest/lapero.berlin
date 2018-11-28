@@ -7,7 +7,7 @@ import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
 import config from '../../../config/SiteConfig';
 import styles from './Navigation.module.scss';
 import './Headroom.scss';
-import Logo from "../../content/logoRouge.jpg"
+import Logo from "../../content/logoGris.png"
 export default class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -38,18 +38,18 @@ export default class Navigation extends Component {
               <span>
                 <Link to="/">
              
-                  <img src={Logo} alt="L'apero" width="50px" />
+                  <img src={Logo} alt="L'apero" width="70px" />
                 </Link>
               </span>
             </div>
             <nav className={styles.navigation}>
               <span>
               
-                <Link to="#services"  activeClassName="active">L'épicerie</Link>
-                <Link to="#references"  activeClassName="active">{config.siteTitle}</Link>
-                <Link to="#references"  activeClassName="active">Contact</Link>
-                
-                <Link to="#impressum"  activeClassName="active">impressum</Link>
+                <Link to="epicerie"  activeClassName="active">L'épicerie</Link>
+                <Link to="news"  activeClassName="active">News</Link>
+                <Link to="contacts"  activeClassName="active">Contacts</Link>
+ 
+           
 
               </span>
             </nav>
@@ -57,21 +57,23 @@ export default class Navigation extends Component {
           </Fade>
         </Headroom>
         <div className={styles.mobileNav}>
-          <div className={styles.mobileNavName}>
+          <div className={styles.mobileNavName}>  
+          <Link to="/">
             <img src={Logo} alt="L'apero" width="50px" />
+          </Link>
           </div>
           <div className={styles.menu}>
             <Menu right isOpen={this.state.menuOpen} onStateChange={this.handleStateChange} width="100%">
               <Link to="/" onClick={() => this.closeMenu()}>
                 <h1>{config.siteTitle}</h1>
               </Link>
-              <Link to="/services" activeClassName="active" onClick={() => this.closeMenu()}>
-                Services
+              <Link to="epicerie" activeClassName="active" onClick={() => this.closeMenu()}>
+                L'epicerie
               </Link>
-              <Link to="/references" activeClassName="active" onClick={() => this.closeMenu()}>
-                Références
+              <Link to="news" activeClassName="active" onClick={() => this.closeMenu()}>
+                News
               </Link>
-              <Link to="/contacts" activeClassName="active" onClick={() => this.closeMenu()}>
+              <Link to="contacts" activeClassName="active" onClick={() => this.closeMenu()}>
                 Contacts
               </Link>
              <div className={styles.mobileNavSocialMedia}>

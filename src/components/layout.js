@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+/*import config from '../../config/SiteConfig';*/
 import Navigation from './Navigation/Navigation.jsx'
 import { StaticQuery, graphql } from 'gatsby'
 //import PageTransition from 'gatsby-plugin-page-transitions';
@@ -7,7 +8,7 @@ import { StaticQuery, graphql } from 'gatsby'
 //import Header from './header'
 import Footer from './footer'
 /*import ContactBar from './contactBar'*/
-import config from '../../config/SiteConfig';
+
 import './layout.scss'
 
 
@@ -22,7 +23,7 @@ const Layout = ({ children }) => (
       query SiteTitleQuery {
         site {
           siteMetadata {
-            title
+            siteTitle
           }
         }
       }

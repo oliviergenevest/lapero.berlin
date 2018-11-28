@@ -1,0 +1,34 @@
+@import "../../../config/variables";
+
+.container {
+  margin: 0 auto;
+ 
+  max-width: $container;
+  padding-left: $distance;
+  padding-right: $distance;
+}
+.first {
+
+   padding-top:110px;
+}
+.text {
+  max-width: $container-text;
+
+  p {
+    font-size: 1.25rem;
+    letter-spacing: -0.003em;
+    line-height: 1.58;
+    --baseline-multiplier: 0.179;
+    --x-height-multiplier: 0.35;
+  }
+
+  ul:not(.badge) {
+      font-size: 1.25rem;
+    letter-spacing: -0.003em;
+    line-height: 1.58;
+    --baseline-multiplier: 0.179;
+    --x-height-multiplier: 0.35;
+  }
+
+
+}

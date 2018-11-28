@@ -55,15 +55,17 @@
   }
 }
 
+
+
 // --------------
 // Configuration
 // --------------
 
 // Configure your colors here
 
-$brand-primary: #68825F; /*vert sombre*/
+$brand-primary: #83b19f; /*vert sombre*/
 $brand-secondary: #7F868A; /*gris clair*/
-$brand-third: #2E3236; /*gris foncé*/
+$brand-third: #4a4a4a; /*gris foncé*/
 
 
 // Configure your grid here
@@ -90,7 +92,7 @@ $container-text: 55rem; // Longer texts should have a smaller max-width to impro
 html {
   /*font-size: 14px;*/
   @include for-desktop-up {
-   /* font-size: 16px;*/
+   /* font-size: 56px;*/
   }
 }
 
@@ -98,7 +100,7 @@ html {
 // You don't need to change anything below here
 // --------------------------------------------
 
-$background-color: #fff;
+$background-color: $brand-primary;
 $body-color: #222;
 $link-color: $brand-primary;
 $link-decoration: none;
