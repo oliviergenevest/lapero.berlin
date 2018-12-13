@@ -1,6 +1,6 @@
 const dotenv = require("dotenv");
 const config = require('./config/SiteConfig');
-
+const path = require(`path`)
 if (process.env.ENVIRONMENT !== "production") {
   dotenv.config();
 }
@@ -24,6 +24,15 @@ module.exports = {
   },
  
  plugins: [
+ {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `content`),
+      },
+    },
+ `gatsby-transformer-sharp`, 
+ `gatsby-plugin-sharp`,
    'gatsby-plugin-react-helmet',
      {
       resolve: 'gatsby-remark-external-links',

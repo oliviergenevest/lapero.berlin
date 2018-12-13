@@ -77,7 +77,10 @@
   @include for-phone-only {
     display: block;
   }
-
+ h1 {
+  font-size:1em;
+  text-transform:uppercase;
+ }
   a {
     color: #fff;
     font-size: 200%;
@@ -88,6 +91,8 @@
     }
   }
 }
+
+
 /* Name or logo */
 .mobileNavName {
   left: 1rem;

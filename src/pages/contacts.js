@@ -16,12 +16,12 @@ const Contacts = ({data}) => {
   return (
     <Layout>
      <Helmet>
-        <title>{`Contacts - ${config.siteTitle}`}</title>
+        <title>{`Kontakt - ${config.siteTitle}`}</title>
       </Helmet>
       <SEO postNode={postNode} pagePath="contacts" customTitle />
 
   <Container text first>
-    <h1>Contacts</h1>
+    <h1>Kontakt</h1>
     <h2>Nicolas Grognet
 GESCHÄFTSFÜHRER</h2>
     <p>BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co </p>
@@ -31,14 +31,16 @@ GESCHÄFTSFÜHRER</h2>
         <div className="content ">
           <div className="item">
           <h2>Horaires</h2>
-            <p><b>Monday to Friday</b> : 9am - 7pm </p>
+            <p><b>Monday to Friday</b> : 11:00 - 20:00 </p>
             <p>
-            <b>Saturday</b> : 9am - 8pm </p>
+            <b>Saturday</b> : 12:00 - 21:00 </p>
+            <p>
+            <b>Sunday</b> : closed </p>
           
           </div>
           <div className="item">
          
-          <p><b><FaPhone/> Tel</b> : {config.siteTel}<br/><b><FaEnvelope/> Email</b> : <a href="mailto:rdv@lapero.berlin">rdv@lapero.berlin</a></p>
+          <p><b><FaPhone/> Tel</b> : {config.siteTel}<br/><b><FaEnvelope/> Email</b> : <a href={`mailto:${config.siteEmail}`}>{config.siteEmail}</a></p>
             <p>L'Apéro <br/>Neue Bahnhofstraße 7B <br/>10245 Berlin
             </p>
             

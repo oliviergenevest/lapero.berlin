@@ -59,11 +59,6 @@ section {
 .hero h1 {color: #86f3a3;  /*font-size:6rem;*/}
 .hero h1 {color: #303030;  /*font-size:6rem;*/}
 
-.footer
-{white-space:normal;
- text-align:center;
- padding:1em;
-}
 
 
 .grid-landing .hero{-ms-grid-row:1;-ms-grid-row-span:2;grid-row:1/3;-webkit-justify-content:space-around;-ms-flex-pack:distribute;justify-content:space-around}
@@ -89,14 +84,16 @@ section {
 
 .grid-contact .content {
   display:flex;
-
+justify-content: space-around;
   padding:1em;
+
 }
 .grid-contact .content .item {
+  background-color:whitesmoke;
  flex: 0 0 50%; 
  align-content: center;
  justify-content: center;
- padding:1em;
+ padding:1em; margin:1em;
 
 }
 .grid-contact .map{
@@ -127,7 +124,7 @@ blockquote {
 .img1 {  
   /* could use `object-fit: cover;` on an img, but tricky*/
   background: url(../content/le-lieu-epicerie-fond3.jpg);
- 
+   background: url(../content/fromages.jpg);
   background-size: cover;
 }
 
@@ -135,12 +132,15 @@ blockquote {
   background: url(../content/apero-charcut-fromage.jpg);
   background-size: cover;
    background: url(../content/lapero-1.jpg);
-   background-position:center 30%;
+   background: url(../content/presentoir.jpg);
+   /*background: url(../content/table.jpg);*/
+   background-position:center 23%;
 }
 
 .img3 {  
   /* https://elements.envato.com/gradient-network-wave-backgrounds-L5PGKP */
   background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/waves.jpg);
+  /* background: url(../content/table.jpg);*/
   background-size: cover;
 }
 
@@ -158,6 +158,7 @@ blockquote {
 
 .cta h1 {    
   /*font: bold 4em/1 'Playfair Display', serif;*/
+  font-size:4em;
   margin: 0 0 20px 0;
   position: relative;
 }

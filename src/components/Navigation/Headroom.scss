@@ -78,7 +78,7 @@ display: flex;
 
 .headroom nav a:hover::after,
 .headroom nav a:focus::after {
-  height: 5px;
+  height: 3px;
   opacity: 1;
   transform: translateY(0px);
 }
@@ -86,7 +86,7 @@ display: flex;
   position: relative;
   display: inline-block;
   outline: none;
-  color: $brand-secondary;
+  color: $brand-third;
   text-decoration: none;
   text-transform: uppercase;
 

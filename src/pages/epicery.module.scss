@@ -1,0 +1,85 @@
+@import "../../config/variables";
+@import "../utils/style.scss";
+
+.section{
+  background-color:whitesmoke;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin: 0px -2rem;
+  margin-bottom:10rem;
+  margin-top:5rem;
+  flex-direction: row;
+  float:none;
+  height:500px;
+}
+
+.section:nth-child(odd) { flex-direction: row-reverse;}
+
+.section:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.imageWrapper  { 
+  display: flex;   
+  padding: 50px;
+  width:55%;
+  height: 590px;
+}
+
+.image {
+    width:100%;
+}
+
+.content {
+  width: 45%;
+    padding: 50px;
+
+    p {
+
+      margin-bottom:0;
+    }
+}
+
+.content h2 {
+  width:100%;
+
+  position:relative;
+}
+.content h2:after  {
+  content:''; 
+  width:60px; 
+  height:4px; 
+
+  background:$brand-primary; 
+  position:absolute; 
+  bottom:-24px;
+  left:0;
+}
+
+
+@media (max-width: 767px) {
+  .section  {
+    height:auto;
+  }
+  .section:nth-child(odd) { flex-direction: row;}
+
+  .imageWrapper {
+      width: 100% !important;
+      -ms-flex: 1 0 auto !important;
+      flex: 1 0 auto !important;
+      margin-top: -70px;
+      height:350px;
+  }
+
+  .content {
+      width: 100% !important;
+      -ms-flex: 1 0 auto !important;
+      flex: 1 0 auto !important;
+       margin-top: -50px;
+  }
+     
+}

@@ -47,7 +47,7 @@ export default class Navigation extends Component {
               
                 <Link to="epicerie"  activeClassName="active">L'épicerie</Link>
                 <Link to="news"  activeClassName="active">News</Link>
-                <Link to="contacts"  activeClassName="active">Contacts</Link>
+                <Link to="contacts"  activeClassName="active">Kontakt</Link>
  
            
 
@@ -64,26 +64,33 @@ export default class Navigation extends Component {
           </div>
           <div className={styles.menu}>
             <Menu right isOpen={this.state.menuOpen} onStateChange={this.handleStateChange} width="100%">
+
               <Link to="/" onClick={() => this.closeMenu()}>
-                <h1>{config.siteTitle}</h1>
+                <h1 >{config.siteTitle}</h1>
               </Link>
+              <Fade down duration={2000} distance = '100px'>
               <Link to="epicerie" activeClassName="active" onClick={() => this.closeMenu()}>
                 L'epicerie
               </Link>
+              </Fade>
+              <Fade down duration={2000} distance = '100px'>
               <Link to="news" activeClassName="active" onClick={() => this.closeMenu()}>
                 News
               </Link>
+               </Fade>
+              <Fade down duration={2000} distance = '100px'>
               <Link to="contacts" activeClassName="active" onClick={() => this.closeMenu()}>
-                Contacts
+                Kontakt
               </Link>
+               </Fade>
              <div className={styles.mobileNavSocialMedia}>
                 <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                   <FaInstagram />
                 </a>
-                <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">
                   <FaTwitter />
                 </a>
-                <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">
+                <a href="{config.facebookPageUrl}" target="_blank" rel="noopener noreferrer">
                   <FaFacebook />
                 </a>
               </div>

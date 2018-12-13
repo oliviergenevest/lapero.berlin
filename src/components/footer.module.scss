@@ -1,0 +1,33 @@
+@import "../../config/variables";
+
+.footer {
+display:flex;
+justify-content:space-between;
+white-space:normal;
+ text-align:center;
+ padding:1em;
+
+ @include for-tablet-landscape-down {
+   flex-direction:column;
+  }
+}
+
+ 
+
+.socialMedia {
+ 
+    a {
+    font-size: 1.5rem;
+  }
+
+  a:not(:first-child) {
+    margin-left: 1rem;
+  }
+}
+
+
+.socialMedia > span {
+  margin-left: auto;
+}
+
+

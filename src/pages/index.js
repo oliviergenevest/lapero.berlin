@@ -68,7 +68,7 @@ const HomePage = () => (
 					    <div className='hero-item'>
 					      <Fade up duration={1500} delay={1000}>
 					      	<h2>{contentfulHomepage.subtitle.subtitle}</h2>
-					      	<p >Ouverture le <span className='focus'>samedi 7 décembre 2018</span></p> 
+					      	<p ><span className='focus'>Das Beste</span> direkt aus Frankreich</p> 
 					      	</Fade>
 					      </div>  
 					</div>
@@ -98,8 +98,8 @@ const HomePage = () => (
 					    <div className="cta">
 					     <Fade bottom distance='100px'  delay={400}>
 					      <h1>L 'Apéro</h1>
-					      <p>L'épicerie propose un large choix de fromages, charcuterie, vins, pains, croissants et autres produits du terroir pour les amateurs des bons repas !</p>
-					      <p>Ouverture le 1er décembre 2018</p>
+					      <p>L'Apéro bietet eine Selektion von Weine und Käse aus Frankreich. Täglich können Sie genießen frische Sandwich oder Apéritiffellern mit einem Gläschen Wein.</p>
+					      
 					      <a className="button" href="epicerie">Découvrir la boutique →</a>
 					        </Fade>
 					    </div>
@@ -118,14 +118,17 @@ const HomePage = () => (
 				<div className="content ">
 					<div className="item">
 					<h2>Horaires</h2>
-						<p><b>Monday to Friday</b> : 9am - 7pm </p>
 						<p>
-						<b>Saturday</b> : 9am - 8pm </p>
+						<b>Monday to Friday</b> : 11:00 - 20:00 </p>
+						<p>
+						<b>Saturday</b> : 12:00 - 21:00 </p>
+						<p>
+						<b>Sunday</b> : closed </p>
 					
 					</div>
 					<div className="item">
-					<h2>Contact</h2>
-					<p><b><FaPhone/> Tel</b> : {config.siteTel}<br/><b><FaEnvelope/> Email</b> : rdv@lapero.berlin</p>
+					<h2>Kontakt</h2>
+					<p><b><FaPhone/> Tel</b> : {config.siteTel}<br/><b><FaEnvelope/> Email</b> : <a href={`mailto:${config.siteEmail}`}>{config.siteEmail}</a></p>
 						<p>L'Apéro <br/>Neue Bahnhofstraße 7B <br/>10245 Berlin
 						</p>
 						

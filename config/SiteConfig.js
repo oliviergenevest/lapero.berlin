@@ -3,15 +3,17 @@ module.exports = {
   siteTitle: "L'Apéro", // Navigation and Site Title
   siteTitleAlt: "L'Apéro - Epicerie fine - Berlin", // Alternative Site title for SEO
   siteUrl: 'https://lapero.berlin', // Domain of your site. No trailing slash!
+  siteEmail: 'kontakt@lapero.berlin',
   siteLanguage: 'fr', // Language Tag on <html> element
   siteLogo: '/logoGris.png', // Used for SEO and manifest
-  siteDescription: 'L\'Apéro, Epicerie fine - Berlin',
-  siteTel:'+49 15757479955',
+  siteDescription: 'Das Beste direkt aus Frankreich',
+  siteTel:'+49 30 49081804',
   author:'Nicolas Grognet',
    authorUrl:'https://lapero.berlin/contacts',
    publisher:'L\'apéro',
     shareImage: '/content/logoGrisText.png', // Open Graph Default Share Image. 1200x1200 is recommended
   //siteFBAppID: '123456789', // Facebook App ID
+  facebookPageUrl:'https://www.facebook.com/laperoberlin',
   //userTwitter: '@emma', // Twitter Username
   // og: Meta Tags
   ogSiteName: 'L\'Apéro - Epicerie fine - Berlin', // Facebook Site Name
