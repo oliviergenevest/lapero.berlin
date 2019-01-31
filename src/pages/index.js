@@ -138,8 +138,8 @@ const HomePage = () => (
 				<div className="content map">
 				
 				
-              <iframe title="map-lapero" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24480.341810529797!2d13.455804519857917!3d52.50162721160397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84ef1234b5a9b%3A0x469cc2c8be9fc488!2sNeue+Bahnhofstra%C3%9Fe+7B%2C+10245+Berlin%2C+Allemagne!5e0!3m2!1sfr!2sfr!4v1543336677643" width="100%" height="350" frameBorder="0"  allowFullScreen></iframe>
-            
+              <iframe title="map-lapero" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38855.96335066087!2d13.435637108429683!3d52.50633133457384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84f90037206a3%3A0x7c8156616e9bc15b!2zbCdBcMOpcm8!5e0!3m2!1sfr!2sde!4v1548946659913" width="100%" height="350" frameBorder="0"  allowFullScreen></iframe>
+           
 				</div>
 				</Fade>
 				</section>
