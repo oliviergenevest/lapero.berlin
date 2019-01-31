@@ -66,22 +66,25 @@
 }
 
 .mobileNav {
-  background-color: $background-color;
+  background-color: $brand-primary;
 
 
   display: none;
-  height: 50px;
+  height: 68px;
   position: fixed;
   width: 100%;
   z-index: 100;
   @include for-phone-only {
     display: block;
   }
-
+ h1 {
+  font-size:1em;
+  text-transform:uppercase;
+ }
   a {
     color: #fff;
     font-size: 200%;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     &:hover {
       color: #fff;
@@ -89,10 +92,12 @@
   }
 }
 
+
+/* Name or logo */
 .mobileNavName {
   left: 1rem;
   position: fixed;
-  top: 1rem;
+  top: 8px;
 
   h3 {
     font-size: 23px !important;
@@ -102,7 +107,7 @@
 
 .mobileNavSocialMedia {
   font-size: 1.5rem;
-  margin-top: 6rem;
+  margin-top: 2rem;
 
   a:not(:first-child) {
     margin-left: 1.5rem;

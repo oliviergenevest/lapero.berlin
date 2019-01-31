@@ -2,71 +2,29 @@
 // Using our variables
 
 @import "../../config/variables";
-main {
-  padding-top: 6.25rem;
-  padding-bottom: 6.25rem;
+
+body {
+  color:$brand-secondary;
 }
-
-.container {
-  padding-top: 6.25rem;
-}
-
-.vibrant-canvas {
-  display: none;
-}
-
-.margin-slick-slide .slick-slide {
-
-  margin:2em;
-}
-
-
- h2 {
-    display: inline-block;
-    padding: .5em;
-    background-color: #c8d0f6;
-    font-weight:600;
-    color:#ffffff;
- }
 
 a {
-  position: relative;
+  color:$brand-primary;
+      text-decoration: none;
 
+      &:hover {
+          color:$brand-third;
+      };
 }
-a:after {
-    
-      content: "";
-    display: block;
-    position: absolute;
-    left: 4px;
-    bottom: 1px;
-    background-color: hsla(22,85%,79%,.35);
-    width: 100%;
-    height: 8px;
-    z-index: -1;
-    opacity: 0;
-}
-a:hover:after {
-    opacity: 1;
+
+.focus {
+  color:$brand-primary;
 }
 
 
-.badge {
-  margin-left:0
+h1 {
+  color:$brand-third;
+  font-size:3em;
 }
-.badge li {
-    background: #f0f2ff;
-    border-radius: 3px;
-
-    display: inline-block;
- 
-    margin-right: 4px;
-    margin-bottom: 4px;
-    padding: 4px 16px;
-    width: auto;
-}
-
-/*
 .bm-burger-button {
   height: 30px;
   position: fixed;
@@ -81,8 +39,8 @@ a:hover:after {
 
 .bm-cross-button {
   height: 24px;
-  right: 2rem !important;
-  top: 2rem !important;
+  right: 1rem !important;
+  top: 1rem !important;
   transform: scale(2.5);
   width: 24px;
 }
@@ -93,7 +51,7 @@ a:hover:after {
 
 .bm-menu {
   background: $brand-primary !important;
-  background: #e2782d !important;
+ /* background: #e2782d !important;*/
   font-size: 1.15em;
   padding: 2.5em 1.5em 0;
 }
@@ -106,4 +64,3 @@ a:hover:after {
   color: #b8b7ad;
   padding: 0.8em;
 }
-*/
