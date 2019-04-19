@@ -1,14 +1,26 @@
 @import "../../config/variables";
 
 .footer {
-display:flex;
-justify-content:space-between;
-white-space:normal;
- text-align:center;
- padding:1em;
+	font-size:.8em;
+	padding :2rem;
+	background-color: $black;
+	display:flex;
+	justify-content:space-between;
+	white-space:normal;
+	align-items:center;
+	text-align:center;
+	color:white;
+	 flex-direction:column;
 
  @include for-tablet-landscape-down {
    flex-direction:column;
+  }
+
+
+  hr {
+  	background-color:$brand-primary;
+  	width:100px;
+  	margin-top:1em;
   }
 }
 
@@ -17,6 +29,7 @@ white-space:normal;
 .socialMedia {
  
     a {
+    	color:white;
     font-size: 1.5rem;
   }
 

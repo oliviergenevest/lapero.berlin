@@ -2,7 +2,7 @@
 @import "../utils/style.scss";
 .heroImg  {
 	position: relative;
-  min-height: 300px;
+  min-height: 400px;
   margin-bottom:2rem;
 
 
@@ -34,7 +34,7 @@ position: absolute;
   left: 0;
   width: 100%;
   z-index: -1;
-  min-height: 300px;
+  min-height:400px;
   height: 50vh;
 @mixin for-tablet-landscape-down {
     height: auto ;

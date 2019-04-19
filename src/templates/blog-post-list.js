@@ -32,19 +32,25 @@ const PostListTemplate = ({ data, pageContext }) => {
             <title>{`News - ${config.siteTitle}`}</title>
             </Helmet>
           <h1>News</h1>
+
+         
           <CardList>
+           
             <Card {...featuredPost} featured />
             {posts.slice(1).map(({ node: post }) => (
               <Card key={post.id} {...post} />
-            ))}
+            ))} 
           </CardList>
+
         </>
         ) : (
-          <CardList>
+           <CardList>
             {posts.map(({ node: post }) => (
               <Card key={post.id} {...post} />
-            ))}
+            ))} 
+
           </CardList>
+
         )}
       </Container>
       <Pagination context={pageContext} />

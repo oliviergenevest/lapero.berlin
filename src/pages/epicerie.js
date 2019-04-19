@@ -76,9 +76,30 @@ const Epicerie = ({data}) => {
         
             <div>
               <Fade right distance='200px'  >
-               <h2>Et aussi...</h2>
+               <h2>Les bons plans L'Apéro</h2>
               </Fade>
               <Fade right distance='200px'  delay={200}>
+                <p>BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co  </p>
+                <p>orem ipsum and co BLa orem ipsum and co BLa orem ipsum and co BLa </p>
+              </Fade>
+            </div>
+
+          </div>
+        </section>
+
+           <section className = {styles.section}>  <Fade bottom distance='200px'>
+          <div className = {styles.imageWrapper}>
+           
+            <Img fluid={data.imagefour.childImageSharp.fluid} className = {styles.image}/>
+         
+          </div>  </Fade>
+          <div className = {styles.content}>
+        
+            <div>
+              <Fade left distance='200px'  >
+               <h2>Wine & Cheese</h2>
+              </Fade>
+              <Fade left distance='200px'  delay={200}>
                 <p>BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co  </p>
                 <p>orem ipsum and co BLa orem ipsum and co BLa orem ipsum and co BLa </p>
               </Fade>
@@ -115,6 +136,15 @@ export const query = graphql`
       }
     }
     imagethree:file(relativePath: { eq: "fromages.jpg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fluid(maxWidth: 746) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+     imagefour:file(relativePath: { eq: "apero-hp-4.jpg" }) {
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.

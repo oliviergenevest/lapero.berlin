@@ -1,5 +1,5 @@
 import Typography from "typography";  
-import config from '../../config/SiteConfig';
+//  import config from '../../config/SiteConfig';
 const typography = new Typography({
  title: 'L\'apero',
   baseFontSize: "20px" ,

@@ -7,6 +7,7 @@
   flex-wrap:wrap;
   justify-content: flex-start;
   align-items: flex-end;
+  align-items: center;
   margin: 0px -2rem;
   margin-bottom:10rem;
   margin-top:5rem;
@@ -46,7 +47,7 @@
 
 .content h2 {
   width:100%;
-
+  color:#292929;
   position:relative;
 }
 .content h2:after  {

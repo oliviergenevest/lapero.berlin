@@ -12,19 +12,19 @@ $transition-headroom: all 0.35s ease-in-out;
 }
 
 .headroom {
-  background-color: #fff;
+/*  background-color:$brand-primary;*/
   padding: 0.5rem 2rem;
   width: 100%;
 display: flex;
   a {
     text-transform:uppercase;
       font-size: 1.25rem;
-      color:$brand-third;
+      color:white;
       text-decoration:none;
   }
 
   a.active {
-    color: $brand-third;
+    color: black;
 
   }
 
@@ -76,6 +76,7 @@ display: flex;
   transform: translateY(-10px);
 }
 
+
 .headroom nav a:hover::after,
 .headroom nav a:focus::after {
   height: 3px;
@@ -86,16 +87,18 @@ display: flex;
   position: relative;
   display: inline-block;
   outline: none;
-  color: $brand-third;
+  color: black;
   text-decoration: none;
   text-transform: uppercase;
-
-
-
-  font-size: 1.35em;
+  /*font-size: 1.35em;*/
 }
 
 .headroom nav a:hover,
 .headroom nav a:focus {
   outline: none;
+}
+
+.headroom nav .active {
+
+  font-weight:bold;
 }

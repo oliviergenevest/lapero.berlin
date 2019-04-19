@@ -33,7 +33,8 @@ module.exports = {
     },
  `gatsby-transformer-sharp`, 
  `gatsby-plugin-sharp`,
-   'gatsby-plugin-react-helmet',
+ `gatsby-plugin-sitemap`,
+   `gatsby-plugin-react-helmet`,
      {
       resolve: 'gatsby-remark-external-links',
       options: {
@@ -49,27 +50,28 @@ module.exports = {
        /*omitGoogleFont : `true`,*/
       },
     },
-    {
+
+  /*  {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
       // replace "UA-XXXXXXXXX-X" with your own Tracking ID
         trackingId: "UA-XXXXXXXXX-X",
       },
-    },
+    },*/
     
       `gatsby-transformer-remark`,
      `gatsby-plugin-sass`,
   
   
    {
-      resolve: "gatsby-source-contentful",
+      resolve: `gatsby-source-contentful`,
       options: {
         spaceId,
         accessToken
       }
     },
      {
-      resolve: 'gatsby-plugin-manifest',
+      resolve: `gatsby-plugin-manifest`,
       options: {
         name: config.siteTitleAlt,
         short_name: config.siteTitle,
@@ -81,9 +83,9 @@ module.exports = {
         icon: `static${config.siteLogo}`,
       },
     },
-        'gatsby-plugin-offline',
+        `gatsby-plugin-offline`,
     {
-      resolve: 'gatsby-plugin-feed',
+      resolve: `gatsby-plugin-feed`,
       options: {
         setup(ref) {
           const ret = ref.query.site.siteMetadata.rssMetadata

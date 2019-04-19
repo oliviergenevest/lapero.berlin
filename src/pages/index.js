@@ -1,14 +1,12 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 import Layout from "../components/layout"
 import Helmet from 'react-helmet'
 import config from '../../config/SiteConfig'
 import SEO from '../components/SEO'
-
-import Logo from "../content/logoGrisText.png"
-import { FaPhone, FaEnvelope } from 'react-icons/fa';
-/*import MapLeaflet from "../components/map-leaflet"*/
-import { Fade } from 'react-reveal';
+import { FaPhone, FaEnvelope } from 'react-icons/fa'
+import { Fade, Flip } from 'react-reveal'
 
 const HomePage = () => (
   <StaticQuery
@@ -43,10 +41,18 @@ const HomePage = () => (
       }
     }
   }
+  logoHomepage: file(sourceInstanceName: { eq: "images" }, name: { eq: "logoGrisText" }) {
+      childImageSharp {
+        fluid( maxWidth: 320) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+ 
 }
 
     `}
-    render={({contentfulHomepage}) => (
+    render={({contentfulHomepage, logoHomepage}) => (
 
       	<>
 		   <Layout>
@@ -60,16 +66,17 @@ const HomePage = () => (
 				  		
 				  		 <div className='hero-item'>
 				  		  <Fade up duration={1500}>
-				        	<img src={Logo} alt="L'apero" width="auto" />
+				        	<Img fluid={logoHomepage.childImageSharp.fluid} alt="L'Apéro - Berlin"/>
 				      		</Fade>
 				      	</div> 
 				      	
 				      	 
 					    <div className='hero-item'>
-					      <Fade up duration={1500} delay={1000}>
-					      	<h2>{contentfulHomepage.subtitle.subtitle}</h2>
-					      	<p ><span className='focus'>Das Beste</span> direkt aus Frankreich</p> 
-					      	</Fade>
+					   
+					      	<Flip left cascade duration={1500}><h2>{contentfulHomepage.subtitle.subtitle}</h2>
+					      	</Flip>
+					      	<p ><span className='focus'>Das Beste direkt aus Frankreich</span></p> 
+					    
 					      </div>  
 					</div>
 					
@@ -113,35 +120,34 @@ const HomePage = () => (
 
 				</section>
 
-				<section className="grid-contact">
-				<Fade duration={2500} delai={500}>
+				<section className="zone-contact">
+				
 				<div className="content ">
-					<div className="item">
-					<h2>Horaires</h2>
-						<p>
-						<b>Monday to Friday</b> : 11:00 - 20:00 </p>
-						<p>
-						<b>Saturday</b> : 12:00 - 21:00 </p>
-						<p>
-						<b>Sunday</b> : closed </p>
-					
-					</div>
-					<div className="item">
-					<h2>Kontakt</h2>
-					<p><b><FaPhone/> Tel</b> : {config.siteTel}<br/><b><FaEnvelope/> Email</b> : <a href={`mailto:${config.siteEmail}`}>{config.siteEmail}</a></p>
-						<p>L'Apéro <br/>Neue Bahnhofstraße 7B <br/>10245 Berlin
-						</p>
-						
-							
-					</div>
+					<Fade duration={2500} delai={500}>
+						<div className="item">
+						<h2>Horaires</h2>
+							<p>
+							<b>Monday to Friday</b> : 11:00 - 20:00 <br/>
+							<b>Saturday</b> : 12:00 - 21:00 <br/>
+							<b>Sunday</b> : closed </p>		
+						</div>
+					</Fade>
+					<Fade duration={2500} delai={500}>
+						<div className="item">
+						<h2>Kontakt</h2>
+						<p><b><FaPhone/> Tel</b> : {config.siteTel}<br/><b><FaEnvelope/> Email</b> : <a href={`mailto:${config.siteEmail}`}>{config.siteEmail}</a></p>
+							<p>L'Apéro <br/>Neue Bahnhofstraße 7B <br/>10245 Berlin - Germany
+							</p>
+						</div>
+					</Fade>
 				</div>
-				<div className="content map">
+				<div className="map">
 				
 				
               <iframe title="map-lapero" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24480.341810529797!2d13.455804519857917!3d52.50162721160397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84ef1234b5a9b%3A0x469cc2c8be9fc488!2sNeue+Bahnhofstra%C3%9Fe+7B%2C+10245+Berlin%2C+Allemagne!5e0!3m2!1sfr!2sfr!4v1543336677643" width="100%" height="350" frameBorder="0"  allowFullScreen></iframe>
             
 				</div>
-				</Fade>
+				
 				</section>
 
 		    </Layout>
