@@ -11,6 +11,7 @@ module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
     siteTitle: 'L\'Apéro',
+    siteUrl: 'https://www.lapero.berlin',
     rssMetadata: {
        siteTitle: 'L\'Apéro',
       site_url: config.siteUrl,
