@@ -32,7 +32,7 @@ const Footer = () => {
           <FaFacebook />
         </a>
       </div>
-      <hr/>
+     
       <span>© 2019 L'Apéro, All right reserved. <Link to="/impressum">Impressum</Link></span>
     </footer>
   )

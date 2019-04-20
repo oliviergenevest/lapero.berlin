@@ -16,12 +16,12 @@ const Contacts = ({data}) => {
   return (
     <Layout>
      <Helmet>
-        <title>{`Kontakt - ${config.siteTitle}`}</title>
+        <title>{`Contact - ${config.siteTitle}`}</title>
       </Helmet>
       <SEO postNode={postNode} pagePath="contacts" customTitle />
 
   <Container text first>
-    <h1>Kontakt</h1>
+    <h1>Contact</h1>
     
     <p>BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co </p>
     <p>Merci :)</p>
@@ -34,8 +34,8 @@ const Contacts = ({data}) => {
           <div className="item">
           <h2>Horaires</h2>
             <p>
-              <b>Monday to Friday</b> : 11:00 - 20:00 <br/>
-              <b>Saturday</b> : 12:00 - 21:00 <br/>
+              <b>Monday to Friday</b> : 12h - 21h <br/>
+              <b>Saturday</b> : 14h - 21h <br/>
               <b>Sunday</b> : closed </p>   
           </div>
           </Fade>

@@ -89,7 +89,7 @@ const HomePage = () => (
 					
 
 
-					   <Fade left distance='100px'><div className="img1"></div></Fade>
+				
 					  
 					   <Fade bottom distance='100px' delay={200}><div className="img2"></div></Fade>
 					   <Fade right distance='100px'>
@@ -127,8 +127,8 @@ const HomePage = () => (
 						<div className="item">
 						<h2>Horaires</h2>
 							<p>
-							<b>Monday to Friday</b> : 11:00 - 20:00 <br/>
-							<b>Saturday</b> : 12:00 - 21:00 <br/>
+							<b>Monday to Friday</b> : 12h - 21h <br/>
+							<b>Saturday</b> : 14h - 21h <br/>
 							<b>Sunday</b> : closed </p>		
 						</div>
 					</Fade>

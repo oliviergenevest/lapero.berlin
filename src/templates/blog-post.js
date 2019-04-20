@@ -47,11 +47,12 @@ const PostTemplate = ({ data, pageContext }) => {
         <h1>{title}</h1>
       </div>
       <Container text >
-       
+       <div  className={styles.meta}>
          <span>Published:</span> {publishDate}
-        <div
+       </div>
+       <div
       dangerouslySetInnerHTML={{ __html: body.childMarkdownRemark.html }}
-    ></div>
+     className={styles.content} ></div>
       <PostLinks previous={previous} next={next} />
       </Container>
     

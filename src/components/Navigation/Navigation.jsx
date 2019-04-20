@@ -44,34 +44,40 @@ const Navigation = () => {
           </div>
           <div className={styles.menu}>
             <Menu right isOpen={menuOpen} onStateChange={() => handleStateChange} width="100%" >
-
-              <Link to="/" onClick={() => handleStateChange}>
-                <h1 >{config.siteTitle}</h1>
-              </Link>
-              <Fade down duration={500} distance = '100px'>
-              <Link to="/epicerie" activeClassName="active" onClick={() => handleStateChange}>L'épicerie
-              </Link>
-              </Fade>
-              <Fade down duration={500} distance = '100px'>
-              <Link to="/news" activeClassName="active" onClick={() => handleStateChange}>News
-              </Link>
-               </Fade>
-              <Fade down duration={500} distance = '100px'>
-              <Link to="/contacts" activeClassName="active" onClick={() => handleStateChange}>Contact
-              </Link>
-               </Fade>
-             <div className={styles.mobileNavSocialMedia}>
-                <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
-                  <FaInstagram />
-                </a>
-                <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter" rel="noopener noreferrer">
-                  <FaTwitter />
-                </a>
-                <a href="{config.facebookPageUrl}" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
-                  <FaFacebook />
-                </a>
+              <div className={styles.mobileNavIllustration}> 
+                <Img fixed={data.logoMobileMenuOpen.childImageSharp.fixed} alt="L'Apéro - Berlin"/>
               </div>
-            </Menu>
+              <div className={styles.mobileNavWrapper}> 
+                <Link to="/" onClick={() => handleStateChange}>
+                  <h1 >{config.siteTitle}</h1>
+                </Link>
+                <div>
+                <Fade down duration={500} distance = '100px'>
+                  <Link to="/epicerie" activeClassName="active" onClick={() => handleStateChange}>L'épicerie
+                  </Link>
+                 
+                  <Link to="/news" activeClassName="active" onClick={() => handleStateChange}>News
+                  </Link>
+                  
+                  <Link to="/contacts" activeClassName="active" onClick={() => handleStateChange}>Contact
+                  </Link>
+                </Fade>
+                </div>
+                <div className={styles.mobileNavSocialMedia}>
+                  <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
+                    <FaInstagram />
+                  </a>
+                  <a href="https://www.twitter.com/" target="_blank" aria-label="Twitter" rel="noopener noreferrer">
+                    <FaTwitter />
+                  </a>
+                  <a href="{config.facebookPageUrl}" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
+                    <FaFacebook />
+                  </a>
+                </div>
+              </div>
+            
+              
+            </Menu> 
           </div>
         </div>
       </header>     
@@ -90,6 +96,13 @@ export const query = graphql`
         }
       }
     }
+     logoMobileMenuOpen: file(sourceInstanceName: { eq: "images" }, name: { eq: "logoGrisText" }) {
+      childImageSharp {
+        fixed( width: 150) {
+          ...GatsbyImageSharpFixed_tracedSVG
+        }
+      }
+    }
     logoNavigationSmall: file(sourceInstanceName: { eq: "images" }, name: { eq: "logoGris" }) {
       childImageSharp {
         fixed( width: 50) {
@@ -99,3 +112,4 @@ export const query = graphql`
     }  
   }
 `
+

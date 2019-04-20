@@ -97,11 +97,12 @@ const Epicerie = ({data}) => {
         
             <div>
               <Fade left distance='200px'  >
-               <h2>Wine & Cheese</h2>
+               <h2>Delivery</h2>
               </Fade>
               <Fade left distance='200px'  delay={200}>
-                <p>BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co  </p>
-                <p>orem ipsum and co BLa orem ipsum and co BLa orem ipsum and co BLa </p>
+                <p>We offer ready-to-eat, strictly imported traditional french products directly at your door!</p>
+
+                <p>Minimum per order 75€ / Free delivery from 100€</p> <p>Call now: 015757479955</p>
               </Fade>
             </div>
 
