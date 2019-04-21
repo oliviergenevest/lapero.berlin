@@ -31,7 +31,7 @@ const Navigation = () => {
               <span>
                 <Link to="/epicerie"  activeClassName="active">L'épicerie</Link>
                 <Link to="/news" partiallyActive={true} activeClassName="active">News</Link>
-                <Link to="/contacts"  activeClassName="active">Kontakt</Link>
+                <Link to="/contacts"  activeClassName="active">Contact</Link>
               </span>
             </nav>
           </Fade>

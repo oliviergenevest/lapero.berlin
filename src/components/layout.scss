@@ -107,8 +107,9 @@ justify-content: center;
 }
 .zone-contact .content .item {
   /*border-top:1em solid $brand-primary;*/
-  background-color:whitesmoke;
- 
+ /* background-color:whitesmoke;*/
+ border:1px solid white;
+ color:white;
  align-content: center;
  justify-content: center;
  padding:3em; 
