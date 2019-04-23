@@ -58,8 +58,8 @@ const Epicerie = ({data}) => {
                <h2>Wine & Cheese</h2>
               </Fade>
               <Fade left distance='200px'  delay={200}>
-                <p>BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co  </p>
-                <p>orem ipsum and co BLa orem ipsum and co BLa orem ipsum and co BLa </p>
+                <p>Morbier, Comté, Mont d'Or, Pastourette, Crottin de Chavignol and more...</p>
+                <p>Saint Emilion,  Côte Chalonnaise, Corbières, Beret Noir</p>
               </Fade>
             </div>
 
@@ -79,8 +79,8 @@ const Epicerie = ({data}) => {
                <h2>Les bons plans L'Apéro</h2>
               </Fade>
               <Fade right distance='200px'  delay={200}>
-                <p>BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co BLa bla bla lorem ipsum and co  </p>
-                <p>orem ipsum and co BLa orem ipsum and co BLa orem ipsum and co BLa </p>
+                <p>Don't miss our amazing offers : subscribe to our newsletter and follow us on facebook !  </p>
+               
               </Fade>
             </div>
 

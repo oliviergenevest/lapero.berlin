@@ -127,15 +127,15 @@ const HomePage = () => (
 						<div className="item">
 						<h2>Horaires</h2>
 							<p>
-							<b>Monday to Friday</b> : 12h - 21h <br/>
-							<b>Saturday</b> : 14h - 21h <br/>
-							<b>Sunday</b> : closed </p>		
+							Monday to Friday : 12h - 21h <br/>
+							Saturday : 14h - 21h <br/>
+							Sunday : closed </p>		
 						</div>
 					</Fade>
 					<Fade duration={2500} delai={500}>
 						<div className="item">
 						<h2>Kontakt</h2>
-						<p><b><FaPhone/> Tel</b> : {config.siteTel}<br/><b><FaEnvelope/> Email</b> : <a href={`mailto:${config.siteEmail}`}>{config.siteEmail}</a></p>
+						<p><FaPhone/> Tel : <a href={`tel:${config.siteTel}`}>{config.siteTel}</a><br/><FaEnvelope/> Email : <a href={`mailto:${config.siteEmail}`}>{config.siteEmail}</a></p>
 							<p>L'Apéro <br/>Neue Bahnhofstraße 7B <br/>10245 Berlin - Germany
 							</p>
 						</div>

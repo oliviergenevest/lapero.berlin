@@ -18,8 +18,8 @@ const Footer = () => {
         L'Apéro
         Neue Bahnhofstraße 7B<br/>
         Berlin 10245 - Germany<br/>
-        Tel : {config.siteTel}<br/>
-         <a href={`mailto:${config.siteEmail}`}>{config.siteEmail}</a></p>
+        Tel :  <a href={`tel:${config.siteTel}`}>{config.siteTel}</a><br/>
+        Email : <a href={`mailto:${config.siteEmail}`}>{config.siteEmail}</a></p>
       </div>
       <div className={styles.socialMedia}>
         <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" rel="noopener noreferrer">
